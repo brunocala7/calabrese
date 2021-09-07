@@ -1,0 +1,31 @@
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="funciones.js"></script>
+    <title> MAIL VÁLIDO </title>
+</head>
+
+<body>
+    <p1>INGRESE SU MAIL</p1>
+    <input type="text" id="email">
+
+    <h1 id="Valido"></h1>
+    <button onclick="verificarMail()">Verificar</button>
+    
+
+    <script>
+        
+        function verificarMail(){
+            var email = document.getElementById("email").value;
+            console.log(email.length);
+
+            if(posibleMailValido(email)){
+                document.getElementById("Valido").innerHTML = "El mail es valido";
+            }
+            else{
+                document.getElementById("Valido").innerHTML = "El mail no es valido";
+            }
+        }
+        
+        
+    </script>
+</body>

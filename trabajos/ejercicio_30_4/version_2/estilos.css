@@ -1,0 +1,27 @@
+#movil{
+    height: 1cm;
+    width: 1cm;
+    margin-top: 1cm;
+    position: absolute;
+    background-color: brown;
+}
+
+#fijo{
+    height: 1cm;
+    width: 1cm;
+    position: absolute;
+    z-index: 1;
+    margin: 4cm;
+    margin-left: 6cm;
+    border: 2px;
+    border-radius: 25px;
+    background-color: blueviolet;
+}
+
+#espacioImagenes{
+    height: 10cm;
+}
+
+#botones {
+    background-color: red;
+}

@@ -1,0 +1,29 @@
+#cuadrado{
+    height: 1cm;
+    width: 1cm;
+    margin-top: 1cm;
+    position: absolute;
+}
+
+#cuadradoNuevo{
+    height: 1cm;
+    width: 1cm;
+    position: absolute;
+    z-index: 1;
+    margin: 4cm;
+    margin-left: 6cm;
+    border: 10px solid blueviolet;
+    border-radius: 50px;
+    background-color: blueviolet;
+}
+
+#espacioImagenes{
+    height: 10cm;
+}
+
+#botones {
+    background-color: red;
+}
+
+
+

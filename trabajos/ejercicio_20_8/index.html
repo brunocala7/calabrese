@@ -1,0 +1,43 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="funciones.js"></script>
+    <script type="text/javascript" src="jquery-3.6.0.js"></script>
+    
+    <title>Calculadora de Areas</title>
+</head>
+
+<body class="bg-light">
+    <div style="margin:20px 200px;padding: 20px;" class="bg-dark bg-opacity-10 text-center">
+        <h1 class="text-danger display-2 fw-normal">CALCULAR AREA</h1>
+        <p1 class="text-dark lead">Ingresa los números, selecciona la operacion que quieras y hacé click en calcular</p1>
+    </div>    
+    <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <p>Numero 1: <input type="number" id="f1"></p>
+                <p>Numero 2: <input type="number" id="f2"></p>
+                <div class="dropdown">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-danger" onclick="control()">Calcular</button>
+                        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><button class="dropdown-item" onclick="boton(1)">Circulo</button></li>
+                            <li><button class="dropdown-item" onclick="boton(2)">Esfera</button></li>
+                            <li><button class="dropdown-item" onclick="boton(3)">Cuadrado</button></li>
+                            <li><button class="dropdown-item" onclick="boton(4)">Cubo</button></li>
+                            <li><button class="dropdown-item" onclick="boton(5)">Triángulo</button></li>
+                        </ul>
+                    </div>
+                </div>
+                <p1 class="text-dark lead" id="resultado"></p1>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>

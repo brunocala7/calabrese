@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="funciones.js"></script>
+        <title> MAIL VÁLIDO </title>
+    </head>
+
+    <body>
+        <p1>Ingrese su telefono</p1>
+        <input type="text" id="telefono">
+
+        <button onclick="verificar_tel()">VERIFICAR</button>
+        <h1 id="validez"></h1>
+
+        <script>
+            function verificar_tel(){
+                var telefono = document.getElementById("telefono").value;
+
+                if(posibleTelefonoValido(telefono)){
+                    document.getElementById("validez").innerHTML = "El telefóno es valido";
+                }
+                else{
+                    document.getElementById("validez").innerHTML = "El telefóno no es valido";
+                }
+
+            }
+        </script>
+    </body>
+</html>

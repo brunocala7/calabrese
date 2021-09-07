@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Versión nueva del ej 19/3</title>
+        <script src="jquery-3.6.0.js"></script>
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+
+    <body>
+        <p>Ingrese su nombre</p>
+        <input type="text" id="nombre">
+
+        <p>Ingrese su apellido</p>
+        <input type="text" id="apellido">
+
+        <p>Ingrese su edad</p>
+        <input type="number" id="edad">
+
+        <button onclick="mostrarDatos()"> mostrar datos ingresados</button>
+
+        <h1 id="mostrarNombre"></h1>
+        <h1 id="mostrarApellido"></h1>
+        <h1 id="mostrarEdad"></h1>
+    </body>
+
+    <script>
+        function mostrarDatos(){
+            let nombreIngresado = $("#nombre").val();
+            let apellidoIngresado = $("#apellido").val();
+            let edadIngresada = $("#edad").val();
+
+            if(edadIngresada > 18){
+                $("body").css("background-color","blue");
+            }
+            else{
+                $("body").css("background-color","green")
+            }
+
+            $("#mostrarNombre").text(nombreIngresado);
+            $("#mostrarApellido").text(apellidoIngresado);
+            $("#mostrarEdad").text(edadIngresada);
+        }
+    </script>
+</html>

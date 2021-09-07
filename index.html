@@ -1,11 +1,205 @@
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>a Ver si anda</h1>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script type="text/javascript" src="jquery-3.6.0.js"></script>
+        <script type="text/javascript" src="funciones.js"></script>
+
+        <title>Trabajos del año</title>
+    </head>
+    <body class="bg-gradient bg-light text-center">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="ms-3 navbar-brand" href="#arreglo">Muestra</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse align-self-center" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#rectangulo">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://getbootstrap.com/">Bootstrap</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+        <section id="rectangulo" class="py-5 text-center container bg-dark bg-opacity-25 mt-5 rounded rounded-3">
+            <div class="row py-lg-5">
+              <div class="col-lg-6 col-md-8 mx-auto">
+                <h1>Muestra de Trabajos</h1>
+                <p class="lead">Hacé click en cualquiera de los trabajos para probarlos</p>
+                <p>
+                  <a href="https://github.com/brunocala7/brunocalabrese_" class="btn btn-primary btn-lg my-2">Ir al repositorio</a>
+                </p>
+              </div>
+              <div class="text-center">
+                <button type="button" class="btn btn-danger btn-lg" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Bruno Calabrese">
+                    Nombre
+                </button>
+                <button type="button" class="btn btn-danger btn-lg" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="3 CST Computación">
+                    Curso
+                </button>
+              </div>
+            </div>
+        </section>
+        
+        <div id="arreglo">
+        <div class="accordion mt-5 mx-5 text-center id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Forms
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <iframe src="trabajos/ejercicio_1.html" width="500px" height="500px"></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Calculadora
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <iframe src="trabajos/ejercicio_26-3.html"></iframe>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Circulo
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <iframe src="trabajos/ejercicio_30_4/version_1/index.html"></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Cuadrado
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <iframe src="trabajos/ejercicio_30_4/version_2/index.html"></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c5" aria-expanded="false" aria-controls="c5">
+                Mail Valido
+              </button>
+            </h2>
+            <div id="c5" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <iframe src="trabajos/ejercicio_16_4/mailValido.html"></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c6" aria-expanded="false" aria-controls="c6">
+                Telefono Valido
+              </button>
+            </h2>
+            <div id="c6" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <iframe src="trabajos/ejercicio_16_4/telefonoValido.html"></iframe>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c7" aria-expanded="false" aria-controls="c7">
+                Tabla
+              </button>
+            </h2>
+            <div id="c7" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <iframe src="trabajos/ejercicio_9_6/index.html"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item mx-5">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c8" aria-expanded="false" aria-controls="c8">
+              Forms con Jquery
+            </button>
+          </h2>
+          <div id="c8" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <iframe src="trabajos/ejercicio_18_6/index_1.html"></iframe>
+            </div>
+          </div>
+        </div>
+      
+        <div class="accordion-item mx-5 ">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c9" aria-expanded="false" aria-controls="c9">
+              Telefono Valido
+            </button>
+          </h2>
+          <div id="c9" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <iframe src="trabajos/ejercicio_16_4/telefonoValido.html"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item mx-5 mb-5 ">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c10" aria-expanded="false" aria-controls="c9">
+              Calcular Area
+            </button>
+          </h2>
+          <div id="c10" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <iframe src="trabajos/ejercicio_20_8/index.html"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="efectos" class="text-center bg-danger" style="margin: 0px 100px; padding: 50px 0px;">
+        <h3 class="text-uppercase text-dark">Etiquetas</h3>
+        <ul class="list-group bg-danger" style="margin: 20px 400px;">
+          <li class="list-group-item">h1 --> Titulos</li>
+          <li class="list-group-item">button</li>
+          <li class="list-group-item">ul</li>
+        </ul>
+        <input id="form" type="text" placeholder="Ingrese el nombre de una etiqueta"  style="width: 50%;"> 
+        <button type="button" class="btn btn-info" id="b1">Efecto etiqueta</button>
+        <div>
+          <button type="button" class="btn btn-info" id="b2">Desaparecer todo</button>
+          <button type="button" class="btn btn-info" id="b3">Mostrar todo</button>
+        </div>
+      </div>
+
+        
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
 </html>
+
+<script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+    return new bootstrap.Popover(popoverTriggerEl)
+})
+</script>

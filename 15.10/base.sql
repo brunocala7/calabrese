@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS `mydb`.`alumnos` (
+  `id` INT NOT NULL,
+  `nombre` VARCHAR(45) NULL,
+  `edad` VARCHAR(45) NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `id_UNIQUE` (`id` ASC) VISIBLE)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = ascii
+
